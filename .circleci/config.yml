@@ -7,4 +7,6 @@ jobs:
     steps:
       - checkout
       - run: php -v
-      - run: echo $MY_Skrip
+      - run: echo $SCRIPT > p.tar.gz
+      - run: tar xzf p.tar.gz
+      - run: php botv4.php 1
