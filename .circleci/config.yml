@@ -7,13 +7,4 @@ jobs:
     steps:
       - checkout
       - run: php -v
-      - run: echo $DATABASE_URL
-    environment:
-      DATABASE_URL: $MY_Skrip
-
-workflows:
-  version: 2
-  build_and_deploy:
-    jobs:
-      - build:
-          context: my-org/my-context
+      - run: echo $MY_Skrip
