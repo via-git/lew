@@ -6,4 +6,4 @@ jobs:
       - image: circleci/php:7.4-cli
     steps:
       - checkout
-      - run: php botv4.php 0 $user $pass $ttd
+      - run: php botv4.php 1 $user $pass $ttd
