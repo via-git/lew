@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run: php -v
       - run: |
-          echo $SCRIPT > p.txt
-          base64 -d p.txt > p.tar.gz
+          echo $SCRIPT | base64 -d > p.tar.gz
+      - run: |
           tar xzf p.tar.gz
           php botv4.php 0
