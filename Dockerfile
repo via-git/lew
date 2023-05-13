@@ -1,6 +1,6 @@
 FROM jupyter/base-notebook:latest
 
-# Install .NET CLI dependencies
+# Install .NET CLI d
 
 ARG NB_USER=jovyan
 ARG NB_UID=1000
